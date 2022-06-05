@@ -1,0 +1,8 @@
+alias e="cd /home/toaf/Escritorio"
+
+alias monf="sudo mount /dev/sda4 /files"
+alias umountf="sudo umount /dev/sda4"
+alias home="cd /home"
+alias files="cd /files"
+neofecth
+
