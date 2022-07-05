@@ -9,7 +9,7 @@ echo "---------------- by TONY-TOAF----------------------------"
 echo
 
 #lista de opsiones primra instancia
-for i in "1--add\n\n""2--init\n\n""3--status\n\n""4--commit\n\n""x--Salir"
+for i in "1--add\n\n""2--init\n\n""3--status\n\n""4--commit\n\n""x--Salir\n\n""b--basico-git"
 do 
 	echo $i
 done
@@ -70,6 +70,18 @@ elif [ $eleccion = 4 ]; then
 		git push
 		echo "fin del programa"
 		exit
+elif [ $eleccion = b ]; then 
+		clear
+		echo "opsiones basicas"
+		git init 
+		git add *
+		read -p "confirmar commit>>> " comentary
+		git commit -m "$comentary"
+		echo "commit agregado"
+		echo 
+		echo "user:tony-toaf, key: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"
+		git push 
+		echo "programa finalizado con extito"
 
 
 #condicional finish 
