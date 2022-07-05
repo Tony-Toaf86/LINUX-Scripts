@@ -77,7 +77,7 @@ elif [ $eleccion = b ]; then
 		git add *
 		read -p "confirmar commit>>> " comentary
 		git commit -m "$comentary"
-		echo "commit agregado"
+		echo "commit agregado a github"
 		echo 
 		echo "user:tony-toaf, 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"
 		git push 
