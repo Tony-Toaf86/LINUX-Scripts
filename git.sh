@@ -79,7 +79,7 @@ elif [ $eleccion = b ]; then
 		git commit -m "$comentary"
 		echo "commit agregado a github"
 		echo 
-		echo "user:tony-toaf, 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"
+		echo "user:tony-toaf, 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 "
 		git push 
 		echo "programa finalizado con extito"
 
