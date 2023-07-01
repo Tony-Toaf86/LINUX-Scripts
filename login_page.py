@@ -4,7 +4,7 @@ opsiones = int(input("seleccion una Opsion \n1.Inicio de secion \n2.Cerrar secio
 print (opsiones)
 
 if opsiones == 1:  #para inciar la secion 
-    login_url = 'https://conex.rnp.hn/LoginUsuario.aspx'
+    login_url = 'https://conex.rnp.hn'
     username = input("Usuario: ")
     password = input("Contraseña: ")
 
@@ -21,7 +21,7 @@ if opsiones == 1:  #para inciar la secion
         print("Error en el inicio de sesión")
 
 elif opsiones == 2: #para cerrar la secion 
-    logout_url = 'https://conex.rnp.hn/LoginUsuario.aspx'
+    logout_url = 'https://conex.rnp.hn'
 
     response = requests.get(logout_url)
 
