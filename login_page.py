@@ -25,7 +25,10 @@ if opciones == 1:  # para iniciar la sesión
         print("Error en el inicio de sesión")
 
 elif opciones == 2:  # para cerrar la sesión
-    logout_url = 'https://conex.rnp.hn/CerrarSesion.aspx'
+    # Desactivar las advertencias de verificación de certificados SSL
+    requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+
+    logout_url = 'https://conex.rnp.hn/CerrarSesio'
 
     response = requests.get(logout_url, verify=False)
 
@@ -36,3 +39,6 @@ elif opciones == 2:  # para cerrar la sesión
 
 else:
     print("Ninguna opción seleccionada")
+
+0801198714619
+e08011987146198
