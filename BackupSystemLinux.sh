@@ -35,12 +35,12 @@ sudo tar -cvpzf "$BACKUP_FILE" \
 --exclude=/home/*/.cache \
 --exclude=/home/*/.local/share/Trash \
 --exclude=/home/*/'VirtualBox VMs' \
-
 /etc \
 $HOME/.config \
 $HOME/.local \
 $HOME/.bashrc \
 $HOME/.zshrc 2>/dev/null
+
 
 
 echo " Backup completado:"
